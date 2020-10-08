@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="*">
+
+    <TableRow> <!-- EditText를 가지고 있는 tableRow-->
+        <EditText
+            android:windowSoftInputMode="stateHidden"
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_span="5"/>
+    </TableRow>
+
+
+    <TableRow><!-- EditText를 가지고 있는 tableRow-->
+        <EditText
+            android:windowSoftInputMode="stateHidden"
+            android:id="@+id/edit2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_span="5"/>
+    </TableRow>
+
+    <TableRow><!-- 키패드 버튼(0,1,2,3,4,)을을 가지고 있는tableRow-->
+        <Button
+            android:id="@+id/zeroBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+        <Button
+            android:id="@+id/oneBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="1"/>
+        <Button
+            android:id="@+id/twoBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="2"/>
+        <Button
+            android:id="@+id/threeBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="3"/>
+        <Button
+            android:id="@+id/fourBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="4"/>
+
+
+    </TableRow>
+
+    <TableRow><!-- 키패드 버튼(0,1,2,3,4,)을을 가지고 있는tableRow-->
+        <Button
+            android:id="@+id/fiveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5" />
+        <Button
+            android:id="@+id/sixBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="6"/>
+        <Button
+            android:id="@+id/sevenBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="7"/>
+        <Button
+            android:id="@+id/eightBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="8"/>
+        <Button
+            android:id="@+id/nineBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="9"/>
+
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="더하기"
+            android:layout_weight="1"
+            android:layout_span="5"/>
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/minusBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="빼기"
+            android:layout_weight="1"
+            android:layout_span="5"/>
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/multiBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="곱하기"
+            android:layout_weight="1"
+            android:layout_span="5"/>
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/divBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="나누기"
+            android:layout_weight="1"
+            android:layout_span="5"/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/result_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="5"
+            android:text="게산결과"
+            android:textColor="#E60C0C"
+            android:layout_weight="1"
+            android:textSize="30sp" />
+
+    </TableRow>
+
+
+
+
+</TableLayout>
